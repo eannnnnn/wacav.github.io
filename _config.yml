@@ -1,12 +1,11 @@
 name: waca
 author: waca
-baseurl: /
 description: theme for jekyll
 github: http://github.com/kor-waca
 twitter: http://www.twitter.com/waca08_18
 facebook: http://www.facebook.com/tk5436
 email: waca5436@gmail.com
-disqus: waca
+disqus: waCa
 
 ##Make sure to edit the above fields, especially for disqus.
 
