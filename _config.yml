@@ -1,17 +1,14 @@
 name: Herring Cove
 author: Herring Cove
-baseurl: /herring-cove
+baseurl: /
 description: theme for jekyll
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
-disqus: diqus-username
+github: http://github.com/kor-waca
+twitter: http://www.twitter.com/waca08_18
+facebook: http://www.facebook.com/tk5436
+email: waca5436@gmail.com
+disqus: waca
 
 ##Make sure to edit the above fields, especially for disqus.
-
 
 highlighter: pygments
 markdown: redcarpet
