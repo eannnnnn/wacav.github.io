@@ -1,0 +1,17 @@
+#Site settings
+title: "waCa"
+description: "블로그"
+email: "waca5436@gmail.com"
+
+#blog setting
+blogTitle: "이것저것"
+
+
+#author
+author: "waca"
+authorImg: "/images/authorImg.png"
+
+#social
+twitter: "waca08_18"
+facebook: "tk5436"
+github: "KOR-waca"

@@ -1,0 +1,28 @@
+<div id="dkHead" role="banner" class="area_head">
+  <h1 class="screen_out">[##_title_##]</h1>
+  <button type="button" class="btn_cate">
+    <span class="ico_skin ico_cate">카테고리</span>
+  </button>
+  <div class="area_search ">
+    <button type="button" class="btn_search">
+      <span class="ico_skin ico_search">검색하기</span>
+    </button>
+      <form action="#" method="get" class="frm_search box_search" onsubmit="return false;">
+        <fieldset>
+          <legend class="screen_out">검색하기</legend>
+          <label for="searchForm" class="lab_search screen_out">Search</label>
+          <input type="text" name="searchForm" id="searchForm" class="tf_search" placeholder="Search"/>
+          <span class="ico_skin ico_search"></span>
+        </fieldset>
+      </form>
+  </div>
+  <div class="area_profile">
+      <div class="tit_post">
+          <a href="/" class="link_post">{{ site.blogTitle }}</a>
+      </div>
+      <span class="thumb_profile">
+          <img src="{{ site.authorImg }}" class="img_profile" alt="프로필사진">
+      </span>
+      <span class="txt_profile">{{ site.author }}</span>
+  </div>
+</div>
