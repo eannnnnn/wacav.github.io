@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>waCa</title>
+<!-- 	<link rel="alternate" type="application/rss+xml"/> -->
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/font.css">
+
+	<!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+	<script src="/js/jquery-2.1.4.js"></script>
+	<!--<![endif]-->
+</head>
+  <body>
+    <div id="dkWrap" class="wrap_skin">
+      <div id="dkHead" role="banner" class="area_head">
+  <h1 class="screen_out">[##_title_##]</h1>
+  <button type="button" class="btn_cate">
+    <span class="ico_skin ico_cate">카테고리</span>
+  </button>
+  <div class="area_search ">
+    <button type="button" class="btn_search">
+      <span class="ico_skin ico_search">검색하기</span>
+    </button>
+      <form action="#" method="get" class="frm_search box_search" onsubmit="return false;">
+        <fieldset>
+          <legend class="screen_out">검색하기</legend>
+          <label for="searchForm" class="lab_search screen_out">Search</label>
+          <input type="text" name="searchForm" id="searchForm" class="tf_search" placeholder="Search"/>
+          <span class="ico_skin ico_search"></span>
+        </fieldset>
+      </form>
+  </div>
+  <div class="area_profile">
+      <div class="tit_post">
+          <a href="/" class="link_post">이것저것</a>
+      </div>
+      <span class="thumb_profile">
+          <img src="/images/2_twitter.JPG" class="img_profile" alt="프로필사진">
+      </span>
+      <span class="txt_profile">waca</span>
+  </div>
+</div>
+      <hr class="hide">
+      <div id="dkContent" class="cont_skin" role="main">
+        <div id="cMain">
+          <div id="mFeature" class="wrap_sub">
+  <div class="cont_sub">
+    <div class="inner_sub">
+      <div class="area_sub">
+        <div role="navigation" class="area_navi">
+          <ul class="tt_category">
+            <li>
+              <a class="link_tit" href="/category">전체 글 <span class="c_cnt">(0)</span></a>
+              <ul class="category_list">
+                <li><a class="link_item" href="/category/OS">OS <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/Node.js">Node.js <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/Javascript">Javascript <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/Angular.js">Angular.js <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/React.js">React.js <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/MongoDB">MongoDB <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/OracleDB">OracleDB <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/JAVA">JAVA <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/Tool">Tool <span class="c_cnt">(0)</span></a></li>
+                <li><a class="link_item" href="/category/hobby">Hobby<span class="c_cnt">(0)</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap_etc">
+          <div class="col_aside left_side">
+              <!-- 공지사항 -->
+                <div class="box_aside">
+                  <strong class="tit_aside">Notice</strong>
+                  <ul class="list_board">
+<!--                     <li><a href="[##_notice_rep_link_##]" class="link_board">[##_notice_rep_title_##]</a></li> -->
+                  </ul>
+                </div>
+              <!-- 최근에 올라온 글 -->
+            <div class="box_aside">
+              <strong class="tit_aside">Recent Posts</strong>
+              <ul class="list_board">
+<!--                 <li><a href="[##_rctps_rep_link_##]" class="link_board">[##_rctps_rep_title_##]</a></li> -->
+            </ul>
+          </div>
+              <!-- 최근에 달린 댓글 -->
+          <div class="box_aside">
+            <strong class="tit_aside">Recent Comments</strong>
+            <ul class="list_board">
+<!--                 <li><a href="[##_rctrp_rep_link_##]" class="link_board">[##_rctrp_rep_desc_##]</a></li> -->
+            </ul>
+          </div>
+              <!-- 링크 -->
+          <div class="box_aside">
+            <strong class="tit_aside">Link</strong>
+            <ul class="list_board">
+<!--                 <li><a href="[##_link_url_##]" class="link_board" target="_blank">[##_link_site_##]</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col_aside right_side">
+              <!-- 글 보관함 -->
+          <div class="box_aside box_archive">
+            <strong class="tit_aside">Archives</strong>
+            <ul class="list_keep">
+<!--                 <li><a href="[##_archive_rep_link_##]" class="link_keep">[##_archive_rep_date_##]</a> ([##_archive_rep_count_##])</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="ico_skin btn_close">닫기</button>
+    <strong class="screen_out">관리 메뉴</strong>
+    <ul class="list_control">
+<!--       <li><a href="[##_owner_url_##]/entry/post" class="ico_skin link_write" title="글쓰기">글쓰기</a></li> -->
+<!--       <li><a href="[##_guestbook_link_##]" class="ico_skin link_memo" title="방명록">방명록</a></li> -->
+<!--       <li><a href="[##_rss_url_##]" class="ico_skin link_rss" title="RSS">RSS</a></li> -->
+<!--       <li><a href="[##_owner_url_##]" class="ico_skin link_manage" title="관리">관리</a></li> -->
+    </ul>
+  </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <hr class="hide">
+      <div id="dkFoot" role="contentinfo" class="area_foot">
+  <small class="info_copyright">
+    Blog is powered by
+    <a href="https://github.com/kor-waca" class="emph_t" target="_blank">waca</a> / Designed by
+    <a href="http://www.tistory.com" class="emph_t" target="_blank">Tistory</a>
+  </small>
+</div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

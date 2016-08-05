@@ -1,17 +1,20 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ko">
-  {% include head.html%}
+  {% include header.html%}
   <body>
     <div id="dkWrap" class="wrap_skin">
       {% include navigation.html %}
       <hr class="hide">
       <div id="dkContent" class="cont_skin" role="main">
         <div id="cMain">
+          {% include sidebar.html %}
         </div>
       </div>
       <hr class="hide">
       {% include footer.html%}
     </div>
+    <script src="/js/script.js"></script>
   </body>
-  {% include footer.html %} 
 </html>
