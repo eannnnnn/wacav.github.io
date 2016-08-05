@@ -1,30 +1,47 @@
 ---
 layout : default
 ---
-<!-- <div id="mArticle" class="article_skin"> -->
-<!--   <div class="list_title"> -->
-<!--     <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">[##_list_conform_##] ([##_list_count_##])</span></h2> -->
-<!--   </div> -->
-<!--   <div class="index_title"> -->
-<!--     <h2 class="tit_skin"><span class="txt_title">[##_title_##]</span></h2> -->
-<!--   </div> -->
-<!--   <div class="list_content"> -->
-<!--     <a href="[##_article_rep_link_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C150x150/?fname=[##_article_rep_thumbnail_raw_url_##]"></a> -->
-<!--     <a href="[##_article_rep_link_##]" class="link_post"> -->
-<!--       <strong class="tit_post ">[##_article_rep_title_##]</strong> -->
-<!--       <p class="txt_post">[##_article_rep_summary_##]</p> -->
-<!--     </a> -->
-<!--     <div class="detail_info"> -->
-<!--       <a href="[##_article_rep_category_link_##]" class="link_cate">[##_article_rep_category_##]</a> -->
-<!--       <span class="txt_bar"></span> -->
-<!--       <span class="txt_date">[##_article_rep_date_##]</span> -->
-<!--     </div> -->
-<!--   </div> -->
-<!--   <div class="area_paging"> -->
-<!--     <span class="inner_paging"> -->
-<!--       <a href="" class="btn_prev [##_no_more_prev_##]"><span class="ico_skin ico_prev"></span>Prev</a> -->
-<!--       <a href="" class="link_page">[##_paging_rep_link_num_##]</a> -->
-<!--       <a href="" class="btn_next [##_no_more_next_##]">Next<span class="ico_skin ico_next"></span></a> -->
-<!--     </span> -->
-<!--   </div> -->
-<!-- </div> -->
+<div id="mArticle" class="article_skin">
+  <div class="list_title">
+    <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">목록</span></h2>
+  </div>
+  {% for post in paginator.posts %}
+  <div class="list_content">
+    <a href="{{ post.url }}" class="thumbnail_post">{% if post.img %}<img src="/images/{{post.img}}"> {% endif %}</a>
+    <a href="{{ post.url }}" class="link_post">
+      <strong class="tit_post ">{{ post.title }}</strong>
+      <p class="txt_post">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+    </a>
+    <div class="detail_info">
+      <a href="/{{post.categories}}" class="link_cate">{{ post.categories }}</a>
+      <span class="txt_bar"></span>
+      <span class="txt_date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </div>
+  </div>
+  {% endfor%}
+  
+
+  <div class="area_paging">
+    <span class="inner_paging">
+    {% if paginator.previous_page %}
+      <a href="" class="btn_prev"><span class="ico_skin ico_prev"></span>Prev</a>
+    {% else %}
+      <a href="javascript:;" class="btn_prev no-more-prev"><span class="ico_skin ico_prev"></span>Prev</a>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="selected">{{ page }}</span>
+      {% elsif page == 1 %}
+       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="link_page">{{ page }} </a>
+      {% else %}
+        <a href="/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="link_page">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <a href="" class="btn_next">Next<span class="ico_skin ico_next"></span></a>
+    {% else %}
+      <a href="javscript:;" class="btn_next no-more-next">Next<span class="ico_skin ico_next"></span></a>
+    {% endif %}
+    </span>
+  </div>
+</div>

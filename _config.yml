@@ -1,3 +1,6 @@
+# Build Settings
+gems:
+  - jekyll-paginate
 #Site settings
 title: "waCa"
 description: "블로그"
@@ -6,6 +9,7 @@ email: "waca5436@gmail.com"
 #blog setting
 blogTitle: "이것저것"
 
+paginate: 5
 
 #author
 author: "waca"
