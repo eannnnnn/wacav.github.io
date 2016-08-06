@@ -24,7 +24,7 @@ layout : default
   <div class="area_paging">
     <span class="inner_paging">
     {% if paginator.previous_page %}
-      <a href="" class="btn_prev"><span class="ico_skin ico_prev"></span>Prev</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn_prev"><span class="ico_skin ico_prev"></span>Prev</a>
     {% else %}
       <a href="javascript:;" class="btn_prev no-more-prev"><span class="ico_skin ico_prev"></span>Prev</a>
     {% endif %}
@@ -38,7 +38,7 @@ layout : default
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-      <a href="" class="btn_next">Next<span class="ico_skin ico_next"></span></a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn_next">Next<span class="ico_skin ico_next"></span></a>
     {% else %}
       <a href="javscript:;" class="btn_next no-more-next">Next<span class="ico_skin ico_next"></span></a>
     {% endif %}
