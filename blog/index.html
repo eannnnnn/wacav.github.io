@@ -1,11 +1,12 @@
 ---
 layout : default
+permalink: /blog/
 ---
 <div id="mArticle" class="article_skin">
   <div class="list_title">
     <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">목록</span></h2>
   </div>
-  {% for post in site.posts %}
+  {% for post in site.categories.blog %}
   <div class="list_content">
     <a href="{{ post.url }}" class="thumbnail_post">{% if post.img %}<img src="/images/{{post.img}}"> {% endif %}</a>
     <a href="{{ post.url }}" class="link_post">
