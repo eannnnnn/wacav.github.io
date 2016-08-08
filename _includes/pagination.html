@@ -3,7 +3,7 @@
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn_prev"><span class="ico_skin ico_prev"></span>Prev</a>
   {% else %}
-    <a href="javascript:;" class="btn_prev no-more-prev"><span class="ico_skin ico_prev"></span>Prev</a>
+    <a class="btn_prev no-more-prev"><span class="ico_skin ico_prev"></span>Prev</a>
   {% endif %}
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
@@ -24,7 +24,7 @@
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn_next">Next<span class="ico_skin ico_next"></span></a>
   {% else %}
-    <a href="javscript:;" class="btn_next no-more-next">Next<span class="ico_skin ico_next"></span></a>
+    <a class="btn_next no-more-next">Next<span class="ico_skin ico_next"></span></a>
   {% endif %}
   </span>
 </div>
