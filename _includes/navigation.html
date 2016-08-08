@@ -1,39 +1,28 @@
-<div class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <p class="navbar-brand">{{ site.name }}</p>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      <li><a href="/list.html">List</a></li>
-      <li><a href="/links.html">Links</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/about.html">About</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
+<div id="dkHead" role="banner" class="area_head">
+  <h1 class="screen_out">[##_title_##]</h1>
+  <button type="button" class="btn_cate">
+    <span class="ico_skin ico_cate">카테고리</span>
+  </button>
+  <div class="area_search ">
+    <button type="button" class="btn_search">
+      <span class="ico_skin ico_search">검색하기</span>
+    </button>
+      <form action="#" method="get" class="frm_search box_search" onsubmit="return false;">
+        <fieldset>
+          <legend class="screen_out">검색하기</legend>
+          <label for="searchForm" class="lab_search screen_out">Search</label>
+          <input type="text" name="searchForm" id="searchForm" class="tf_search" placeholder="Search"/>
+          <span class="ico_skin ico_search"></span>
+        </fieldset>
+      </form>
   </div>
-</div>
-
-<!-- Sidebar -->
-<div id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <li class="sidebar-brand"><a href="/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
-    <hr />
-    <li><a href="/list.html">List</a></li>
-    <li><a href="/links.html">Links</a></li>
-    <li><a href="/projects.html">Projects</a></li>
-    <li><a href="/about.html">About</a></li>
-    <hr />
-    <div id="social-wrapper">
-      <li> <a href="{{ site.twitter }}"><i class="fa fa-twitter-square"></i> @twitter</a></li>
-      <li> <a href="{{ site.facebook }}"><i class="fa fa-facebook-square"></i> facebook</a></li>
-      <li> <a href="{{ site.github }}"><i class="fa fa-github-square"></i> github</a> </li>
-    </div>
-  </ul>
+  <div class="area_profile">
+      <div class="tit_post">
+          <a href="/" class="link_post">{{ site.blogTitle }}</a>
+      </div>
+      <span class="thumb_profile">
+          <img src="{{ site.authorImg }}" class="img_profile" alt="프로필사진">
+      </span>
+      <span class="txt_profile">{{ site.author }}</span>
+  </div>
 </div>

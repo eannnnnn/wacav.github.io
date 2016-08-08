@@ -1,19 +1,21 @@
 ---
 ---
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
+<html lang="ko">
+  {% include header.html%}
   <body>
-    <div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
-    <div id = "wrapper">
-      {%include navigation.html %}
-      <div class="container">
-        {{ content }}
+    <div id="dkWrap" class="wrap_skin">
+      {% include navigation.html %}
+      <hr class="hide">
+      <div id="dkContent" class="cont_skin" role="main">
+        <div id="cMain">
+          {% include sidebar.html %}
+          {{ content }}
+        </div>
       </div>
-      {% include footer.html %}
+      <hr class="hide">
+      {% include footer.html%}
     </div>
-    {% include scripts.html %}
+    <script src="/js/script.js"></script>
   </body>
 </html>

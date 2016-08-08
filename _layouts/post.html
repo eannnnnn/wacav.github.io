@@ -1,17 +1,30 @@
 ---
-layout: default
+layout : default
 ---
-<div id="article">
-  <div class="article-title">{{ page.title }}</div>
-  <p class="meta">
-    <small>
-      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string}}
-    </small>
-  </p> <hr/>
-  <div class="post">
+<div id="mArticle" class="article_skin">
+  <h2 id="dkBody" class="screen_out">{{ page.title }}</h2>
+  <div class="area_title">
+    <strong class="tit_category"><a href="/blog/{{page.categories}}">{{page.categories}}</a></strong>
+    <h3 class="tit_post">{{page.title}}</h3>
+    <span class="info_post">{{site.author}}
+      <span class="txt_bar"></span>{{ page.date | date: "%Y-%m-%d" }}
+    </span>
+  </div>
+  <div class="area_view">
     {{ content }}
   </div>
+  <div class="area_etc">
+    <dl class="list_tag">
+      <dt>Tag</dt>
+      <dd>{{page.tag}}</dd>
+    </dl>
+    <strong class="screen_out">공유하기 링크</strong>
+      <ul class="list_share">
+        <li><a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a></li>
+        <li><a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a></li>
+        <li><a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a></li>
+      </ul>
+  </div>
+  <div class="area_reply">
+  </div>
 </div>
-{% include share.html %}
-{% include pager.html %}
-{% include comment.html %}

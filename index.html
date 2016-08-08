@@ -1,39 +1,23 @@
 ---
-title: Herring Cove
+layout : default
 ---
-{% include showcase.html %}
-{% include greeting.html %}
-
-{% if site.posts != empty %}
-<div class="recent-posts">
-  <h1>Recent Posts</h1>
-  {% for post in site.posts limit: 3 %}
-    {% if forloop.first %}
-      {% assign add_class = 'most-recent' %}
-      {% capture fresh_tag %}
-        &nbsp;<span class="badge"><smaller>FRESH</smaller></span>
-      {% endcapture %}
-    {% endif %}
-    <ul class="homepage-posts {{ add_class }}">
-      <li>
-        <span>
-          <h4>
-            <a href="{{ site.baseurl }}/{{ post.url }}">
-              {{ post.title }}
-            </a>
-            {{ fresh_tag }}
-            <time class="pull-right">
-              {{ post.date | date_to_string | date: "%b %-d, %Y"  }}
-            </time>
-          </h4>
-        </span>
-      </li>
-    </ul>
-    {% assign add_class = '' %}
-    {% assign fresh_tag = '' %}
-  {% endfor %}
-  <ul>
-    <a href="{{ site.baseurl }}/list.html">View More...</a>
-  </ul>
+<div id="mArticle" class="article_skin">
+  <div class="list_title">
+    <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">목록</span></h2>
+  </div>
+  {% for post in paginator.posts %}
+  <div class="list_content">
+    <a href="{{ post.url }}" class="thumbnail_post">{% if post.img %}<img src="/images/{{post.img}}"> {% endif %}</a>
+    <a href="{{ post.url }}" class="link_post">
+      <strong class="tit_post ">{{ post.title }}</strong>
+      <p class="txt_post">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+    </a>
+    <div class="detail_info">
+      <a href="/blog/{{post.categories}}" class="link_cate">{{ post.categories }}</a>
+      <span class="txt_bar"></span>
+      <span class="txt_date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </div>
+  </div>
+  {% endfor%}
+  {% include pagination.html %}
 </div>
-{% endif %}

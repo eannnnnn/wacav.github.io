@@ -1,0 +1,71 @@
+<div id="mFeature" class="wrap_sub">
+  <div class="cont_sub">
+    <div class="inner_sub">
+      <div class="area_sub">
+        <div role="navigation" class="area_navi">
+          <ul class="tt_category">
+            <li>
+              <a class="link_tit" href="/">전체 글</a>
+              <ul class="category_list">
+                <li><a class="link_item" href="/blog/os">OS  </a></li>
+                <li><a class="link_item" href="/blog/node">Node.js  </a></li>
+                <li><a class="link_item" href="/blog/javascript">Javascript  </a></li>
+                <li><a class="link_item" href="/blog/angular">Angular.js  </a></li>
+                <li><a class="link_item" href="/blog/react">React.js  </a></li>
+                <li><a class="link_item" href="/blog/mongo">MongoDB  </a></li>
+                <li><a class="link_item" href="/blog/oracle">OracleDB  </a></li>
+                <li><a class="link_item" href="/blog/java">JAVA  </a></li>
+                <li><a class="link_item" href="/blog/tool">Tool  </a></li>
+                <li><a class="link_item" href="/blog/hobby">Hobby </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap_etc">
+          <div class="col_aside left_side">
+              <!-- 공지사항 -->
+                <div class="box_aside">
+                  <strong class="tit_aside">Notice</strong>
+                  <ul class="list_board">
+<!--                     <li><a href="[##_notice_rep_link_##]" class="link_board">[##_notice_rep_title_##]</a></li> -->
+                  </ul>
+                </div>
+              <!-- 최근에 올라온 글 -->
+            <div class="box_aside">
+              <strong class="tit_aside">Recent Posts</strong>
+              <ul class="list_board">
+                  {% for post in site.post limit : 5 %}
+                 <li><a href="{{ post.url }}" class="link_board">{{ post.title }}</a></li>
+                  {% endfor %}
+            </ul>
+          </div>
+              <!-- 링크 -->
+          <div class="box_aside">
+            <strong class="tit_aside">Link</strong>
+            <ul class="list_board">
+<!--                 <li><a href="[##_link_url_##]" class="link_board" target="_blank">[##_link_site_##]</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col_aside right_side">
+              <!-- 글 보관함 -->
+          <div class="box_aside box_archive">
+            <strong class="tit_aside">Archives</strong>
+            <ul class="list_keep">
+<!--                 <li><a href="[##_archive_rep_link_##]" class="link_keep">[##_archive_rep_date_##]</a> ([##_archive_rep_count_##])</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="ico_skin btn_close">닫기</button>
+    <strong class="screen_out">관리 메뉴</strong>
+    <ul class="list_control">
+<!--       <li><a href="[##_owner_url_##]/entry/post" class="ico_skin link_write" title="글쓰기">글쓰기</a></li> -->
+<!--       <li><a href="[##_guestbook_link_##]" class="ico_skin link_memo" title="방명록">방명록</a></li> -->
+<!--       <li><a href="[##_rss_url_##]" class="ico_skin link_rss" title="RSS">RSS</a></li> -->
+<!--       <li><a href="[##_owner_url_##]" class="ico_skin link_manage" title="관리">관리</a></li> -->
+    </ul>
+  </div>
+  </div>
+</div>

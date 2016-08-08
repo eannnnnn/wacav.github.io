@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: waca
 author: waca
 description: theme for jekyll
@@ -25,3 +26,27 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+=======
+# Build Settings
+gems: [jekyll-paginate, jekyll-paginate-category, jemoji]
+#Site settings
+title: "waCa"
+description: "블로그"
+email: "waca5436@gmail.com"
+
+#blog setting
+future: true
+blogTitle: "이것저것"
+
+paginate: 5
+paginate_path: "/page:num"
+
+#author
+author: "waca"
+authorImg: "/images/2_twitter.JPG"
+
+#social
+twitter: "waca08_18"
+facebook: "tk5436"
+github: "KOR-waca"
+>>>>>>> branch 'master' of https://github.com/KOR-waCa/KOR-waCa.github.io.git
