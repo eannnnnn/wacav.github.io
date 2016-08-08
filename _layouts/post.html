@@ -1,22 +1,22 @@
 ---
-layout: default
+layout : default
 ---
 <div id="mArticle" class="article_skin">
-  <h2 id="dkBody" class="screen_out">[##_article_rep_title_##] 본문</h2>
+  <h2 id="dkBody" class="screen_out">{{ page.title }}</h2>
   <div class="area_title">
-    <strong class="tit_category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>
-    <h3 class="tit_post">[##_article_rep_title_##]</h3>
-    <span class="info_post">[##_article_rep_author_##]
-      <span class="txt_bar"></span>[##_article_rep_date_##]
+    <strong class="tit_category"><a href="/blog/{{page.categories}}">{{page.categories}}</a></strong>
+    <h3 class="tit_post">{{page.title}}</h3>
+    <span class="info_post">{{site.author}}
+      <span class="txt_bar"></span>{{ page.date | date: "%Y-%m-%d" }}
     </span>
   </div>
   <div class="area_view">
-    [##_article_rep_desc_##]
+    {{ content }}
   </div>
   <div class="area_etc">
     <dl class="list_tag">
       <dt>Tag</dt>
-      <dd>[##_tag_label_rep_##]</dd>
+      <dd>{{page.tag}}</dd>
     </dl>
     <strong class="screen_out">공유하기 링크</strong>
       <ul class="list_share">

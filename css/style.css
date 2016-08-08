@@ -163,7 +163,7 @@ html, body{height:100%;min-height:100%}
 
 /* 뷰 상단 */
 .area_title{margin:0 0 30px;padding-bottom:15px;border-bottom:1px solid #efefef}
-.area_title .tit_category a {font-weight:700;font-size:16px;color:#6bacce}
+.area_title .tit_category a {font-weight:700;font-size:16px;color:#6bacce ; text-transform: uppercase;}
 .area_title .tit_post{padding:5px 0 10px;font-weight:normal;font-size:34px;line-height:43px;color:#222}
 .area_title .info_post,
 .area_title .info_post a {font-size:13px;color:#a7a7a7}
@@ -302,7 +302,7 @@ html, body{height:100%;min-height:100%}
 
 /* 페이징 */
 .article_skin .area_paging{height:30px;margin-top:26px;text-align:center}
-.area_paging .inner_paging{display:inline-block;overflow:hidden;width:100%;}
+.area_paging .inner_paging{display:inline-block;overflow:hidden;}
 .area_paging .ico_skin{width:6px;height:10px}
 .area_paging .btn_prev{float:left;margin-right:18px;line-height:30px;color:#5c5c5c}
 .area_paging .btn_prev.no-more-prev {color:#a7a7a7; text-decoration: none}

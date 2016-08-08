@@ -1,18 +1,16 @@
 # Build Settings
-gems: [jekyll-paginate, jekyll-paginate-category]
+gems: [jekyll-paginate, jekyll-paginate-category, jemoji]
 #Site settings
 title: "waCa"
 description: "블로그"
 email: "waca5436@gmail.com"
 
 #blog setting
+future: true
 blogTitle: "이것저것"
 
 paginate: 5
-paginate_path: "page:num"
-
-category_dir: "blog"
-category_layout: "index.html"
+paginate_path: "/page:num"
 
 #author
 author: "waca"
