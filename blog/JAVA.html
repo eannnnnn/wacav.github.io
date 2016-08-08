@@ -13,7 +13,7 @@ layout : default
       <p class="txt_post">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
     </a>
     <div class="detail_info">
-      <a href="/{{post.categories}}" class="link_cate">{{ post.categories }}</a>
+      <a href="/blog/{{post.categories}}" class="link_cate">{{ post.categories }}</a>
       <span class="txt_bar"></span>
       <span class="txt_date">{{ post.date | date: "%Y-%m-%d" }}</span>
     </div>
