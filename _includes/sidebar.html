@@ -34,14 +34,9 @@
             <div class="box_aside">
               <strong class="tit_aside">Recent Posts</strong>
               <ul class="list_board">
-<!--                 <li><a href="[##_rctps_rep_link_##]" class="link_board">[##_rctps_rep_title_##]</a></li> -->
-            </ul>
-          </div>
-              <!-- 최근에 달린 댓글 -->
-          <div class="box_aside">
-            <strong class="tit_aside">Recent Comments</strong>
-            <ul class="list_board">
-<!--                 <li><a href="[##_rctrp_rep_link_##]" class="link_board">[##_rctrp_rep_desc_##]</a></li> -->
+                  {% for post in site.post limit : 5 %}
+                 <li><a href="{{ post.url }}" class="link_board">{{ post.title }}</a></li>
+                  {% endfor %}
             </ul>
           </div>
               <!-- 링크 -->
