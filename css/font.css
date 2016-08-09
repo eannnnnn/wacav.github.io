@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @charset "utf-8";
 $response.setContentType("text/css")
 @font-face {
@@ -28,4 +29,28 @@ $response.setContentType("text/css")
     url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.svg) format('svg'),
     url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.ttf) format('truetype'),
     url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'nanumbarunpenr';
+    src: url('/fonts/nanumbarunpenr.eot');
+    src: url('/fonts/nanumbarunpenr.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nanumbarunpenr.woff2') format('woff2'),
+         url('/fonts/nanumbarunpenr.woff') format('woff'),
+         url('/fonts/nanumbarunpenr.ttf') format('truetype'),
+         url('/fonts/nanumbarunpenr.svg#nanumbarunpenr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'D2 coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url('D2Coding.eot');
+  src: local('O'),
+       url('/fonts/D2Coding.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/D2Coding.woff2') format('x-woff2'),
+       url('/fonts/D2Coding.woff') format('woff'),
+       url('/fonts/D2Coding.ttf') format('truetype');
 }
