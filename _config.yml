@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-name: waca
-author: waca
-description: theme for jekyll
-github: http://github.com/kor-waca
-twitter: http://www.twitter.com/waca08_18
-facebook: http://www.facebook.com/tk5436
-email: waca5436@gmail.com
-disqus: waCa
-
-##Make sure to edit the above fields, especially for disqus.
-
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-=======
 # Build Settings
 gems: [jekyll-paginate, jekyll-paginate-category, jemoji]
 #Site settings
@@ -49,4 +20,3 @@ authorImg: "/images/2_twitter.JPG"
 twitter: "waca08_18"
 facebook: "tk5436"
 github: "KOR-waca"
->>>>>>> branch 'master' of https://github.com/KOR-waCa/KOR-waCa.github.io.git
