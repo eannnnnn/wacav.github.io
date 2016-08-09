@@ -1,0 +1,28 @@
+---
+layout : default
+---
+{% assign counter = 0 %}
+<div id="mArticle" class="article_skin">
+  {% for post in site.posts %}
+  {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% if currentyear != year %}
+      {% assign counter = counter | plus: 1 %}
+      <div class="list_title">
+        <h2 id="{{ currentyear }}" class="tit_skin" {% if counter > 1 %} style="margin-top:50px;" {% endif %}><span class="screen_out">{{ currentyear }}</span><span class="txt_title">{{ currentyear }}</span></h2>
+      </div>
+      {% capture year %}{{currentyear}}{% endcapture %} 
+    {% endif %}
+    <div class="list_content">
+    <a href="{{ post.url }}" class="thumbnail_post">{% if post.img %}<img src="/images/{{post.img}}"> {% endif %}</a>
+    <a href="{{ post.url }}" class="link_post">
+      <strong class="tit_post ">{{ post.title }}</strong>
+      <p class="txt_post">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+    </a>
+    <div class="detail_info">
+      <a href="/blog/{{post.categories}}" class="link_cate">{{ post.categories }}</a>
+      <span class="txt_bar"></span>
+      <span class="txt_date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>

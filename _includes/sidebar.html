@@ -52,7 +52,16 @@
           <div class="box_aside box_archive">
             <strong class="tit_aside">Archives</strong>
             <ul class="list_keep">
-<!--                 <li><a href="[##_archive_rep_link_##]" class="link_keep">[##_archive_rep_date_##]</a> ([##_archive_rep_count_##])</li> -->
+              {% assign counter = 0 %}
+              {% for post in site.posts %}
+                {% assign thisyear = post.date | date: "%Y" %}
+                {% assign prevyear = post.previous.date | date: "%Y" %}
+                {% assign counter = counter | plus: 1 %}
+                {% if thisyear != prevyear %}
+                  <li><a href='/archive/#{{ post.date | date:"%Y" }}' class="link_keep">{{ thisyear }}</a> ({{ counter }})</li>
+                  {% assign counter = 0 %}
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
         </div>
