@@ -49,7 +49,6 @@
 
         $(document.body).on("keydown", function(e) {
             if ($wrap.hasClass(ON_CLASS) && e.keyCode == 27) {
-                $formSearch[0].reset();
                 hideSearch();
             }
         });
