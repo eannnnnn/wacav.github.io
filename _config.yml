@@ -9,6 +9,10 @@ email: "waca5436@gmail.com"
 future: true
 blogTitle: "이것저것"
 
+#disqus Shorname
+disqus: korwacagithubio
+
+#paging
 paginate: 5
 paginate_path: "/page:num"
 
