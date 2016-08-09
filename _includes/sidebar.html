@@ -27,7 +27,9 @@
                 <div class="box_aside">
                   <strong class="tit_aside">Notice</strong>
                   <ul class="list_board">
-<!--                     <li><a href="[##_notice_rep_link_##]" class="link_board">[##_notice_rep_title_##]</a></li> -->
+                    {% for post in site.categories.notice %}
+                      <li><a href="{{ post.url }}" class="link_board">{{ post.title }}</a></li>
+                    {% endfor %}
                   </ul>
                 </div>
               <!-- 최근에 올라온 글 -->
@@ -43,7 +45,9 @@
           <div class="box_aside">
             <strong class="tit_aside">Link</strong>
             <ul class="list_board">
-<!--                 <li><a href="[##_link_url_##]" class="link_board" target="_blank">[##_link_site_##]</a></li> -->
+              <li><a href="{{ site.facebook_url }}" class="link_board" target="_blank">Facebook</a></li>
+              <li><a href="{{ site.twitter_url }}" class="link_board" target="_blank">Twitter</a></li>
+              <li><a href="{{ site.github_url }}" class="link_board" target="_blank">Github</a></li>
             </ul>
           </div>
         </div>
