@@ -16,7 +16,11 @@ layout : default
   <div class="area_etc">
     <dl class="list_tag">
       <dt>Tag</dt>
-      <dd>{{page.tag}}</dd>
+      <dd>
+      {% for tag in page.tags %}
+      <a href="/tag/?tags={{ tag }}">#{{ tag }}</a>
+      {% endfor %}
+      </dd>
     </dl>
     <strong class="screen_out">공유하기 링크</strong>
       <ul class="list_share">
