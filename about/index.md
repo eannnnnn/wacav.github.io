@@ -13,7 +13,7 @@ categories : notice
 *   **Twitter** : [@waca08_18](https://twitter.com/waca08_18)
 *   **Facebook** : [tk5436](https://facebook.com/tk5436)
 *   **GitHub** : [KOR-waCa](https://github.com/kor-waca)
-*   **Community** : [9XD](https://www.facebook.com/groups/1565641083693087/), [OKKY](http://okky.kr)
+*   **Community** : [9XD](https://www.facebook.com/groups/1565641083693087/), [OKKY](http://okky.kr) , [이상한모임](https://blog.weirdx.io/about)
 *   **Hobby**
     *   [**Coding**](https://github.com/kor-waca/mean) MEAN Stack 공부
     *   **Game**
