@@ -278,6 +278,7 @@ html, body{height:100%;min-height:100%}
 .list_content {padding:24px 0 26px;border-bottom:1px solid #efefef }
 .list_content::after { content:''; clear:both; display:block }
 .list_content .thumbnail_post { float:right; width:150px; height:150px; margin:6px 0 5px 30px }
+.list_content .thumbnail_post img { display: block; width: 100%; height: inherit; }
 .list_content .link_post{display:block;overflow:hidden;text-decoration:none}
 .list_content .link_post:hover .tit_post {color:#6bacce}
 .list_content .tit_post{display:block;font-weight:normal;font-size:24px;line-height:34px}
