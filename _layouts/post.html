@@ -18,7 +18,7 @@ layout : default
       <dt>Tag</dt>
       <dd>
       {% for tag in page.tags %}
-      <a href="/tag/?tags={{ tag }}">#{{ tag }}</a>
+      <a href="/search/?tags={{ tag | downcase }}">#{{ tag | downcase }}</a>
       {% endfor %}
       </dd>
     </dl>

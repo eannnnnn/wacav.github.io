@@ -2,7 +2,7 @@
 layout: post
 title : "jekyll 블로그"
 date : 2016-08-10 00:00:00
-categories : Hobby
+categories : hobby
 tags: jekyll blog themes
 ---
 ### jekyll 블로그 운영
