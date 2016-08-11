@@ -1,11 +1,12 @@
 ---
 layout : default
+permalink : /blog/html
 ---
 <div id="mArticle" class="article_skin">
   <div class="list_title">
-    <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">목록</span></h2>
+    <h2 id="dkBody" class="tit_skin"><span class="screen_out">HTML</span><span class="txt_title">HTML</span></h2>
   </div>
-  {% for post in paginator.posts %}
+  {% for post in site.categories.html %}
   <div class="list_content">
     {% if post.img %}<a href="{{ post.url }}" class="thumbnail_post"><img src="/images/{{post.img}}"> </a>{% endif %}
     <a href="{{ post.url }}" class="link_post">
@@ -19,5 +20,4 @@ layout : default
     </div>
   </div>
   {% endfor%}
-  {% include pagination.html %}
 </div>

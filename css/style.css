@@ -17,7 +17,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:none}
-code{font-size:14px;line-height:1.5;font-family:'D2 coding'; color:#666}
+code{font-size:14px;line-height:1.5;font-family:'D2 coding'; color:#666;background-color: #F6F7F8;}
 /* global */
 #dkIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
 .ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */

@@ -8,7 +8,7 @@ permalink : /blog/hobby
   </div>
   {% for post in site.categories.hobby %}
   <div class="list_content">
-    <a href="{{ post.url }}" class="thumbnail_post">{% if post.img %}<img src="/images/{{post.img}}"> {% endif %}</a>
+    {% if post.img %}<a href="{{ post.url }}" class="thumbnail_post"><img src="/images/{{post.img}}"> </a>{% endif %}
     <a href="{{ post.url }}" class="link_post">
       <strong class="tit_post ">{{ post.title }}</strong>
       <p class="txt_post">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
