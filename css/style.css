@@ -61,7 +61,7 @@ html, body{height:100%;min-height:100%}
 .wrap_sub{display:block;position:fixed;left:0;top:0;z-index:10;width:23%;min-width:320px;height:100%;min-height:100%;background-repeat:no-repeat;background-position:50% 0;background-size:cover;transition:width ease-in-out 0.2s}
 .cont_sub{width:100%;height:100%;background:rgba(34,34,34,0.35)}
 .cont_sub .inner_sub {position:relative;width:100%;height:100%}
-.cont_sub .area_sub{overflow-x:hidden;height:900px;overflow-y:auto;position:absolute;top:83px;bottom:80px;left:0;right:0;padding-top:15px}
+.cont_sub .area_sub{overflow-y:auto;position:absolute;top:83px;bottom:80px;left:0;right:0;padding-top:15px}
 
 .area_search{position:absolute;right:34px;top:-154px;z-index:10}
 .area_search .btn_search{display:block;position:relative;width:23px;height:23px;margin-top:15px}
