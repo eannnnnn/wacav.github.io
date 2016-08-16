@@ -20,7 +20,14 @@ tags: javascript js interview frontend
 - 다음 코드의 차이점은 무엇인가요?
 
 ```javascript
-function Person(){} var person = Person() var person = new Person()
+function Person(){
+
+}
+var person = Person()
+```
+
+```javascript
+var person = new Person()
 ```
 
 - `.call`과 `.apply`의 차이점은 무엇인가요?
@@ -59,6 +66,6 @@ function Person(){} var person = Person() var person = new Person()
 - `$`과 `$.fn` 차이점이 무엇인지 설명 해주시오. 혹은, `$.fn`가 무엇인지 설명해주세요.
 - 다음 Selector를 최적화 해주세요.:
 
-```
+```javascript
 $(".foo div#bar:eq(0)")
 ```
