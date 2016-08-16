@@ -329,7 +329,7 @@ only screen and (max-width:738px){
 	.area_head .btn_cate .ico_cate {width:19px;height:15px;margin:0 auto;background-position:0 0}
 	.search_on .area_search {top:0;left:0;width:100%;margin-left:0;padding:12px 15px 0;-webkit-box-sizing:border-box;box-sizing:border-box;padding:6px 15px 0;background:#fff}
 	.area_search .frm_search {width:auto;height:31px;padding:0 15px 0 40px;border:1px solid #ebebeb;border-radius:20px;margin-top:0}
-	.frm_search .tf_search {width:100%;color:#222;height:19px;margin-top:7px;font-family:applesdgothicneo-light}
+	.frm_search .tf_search {width:100%;color:#222;height:19px;margin-top:7px;font-family:'Spoqa Han Sans', sans-serif;}
 	.frm_search .tf_search::-webkit-input-placeholder { color:#a7a7a7 }
 	.frm_search .ico_search {position:absolute;left:14px;top:7px;width:18px;height:18px;background-position:-20px 0}
 	.wrap_sub {position:relative;width:auto;min-width:auto;display:none}
@@ -348,7 +348,7 @@ only screen and (max-width:738px){
 	.navi_on .area_head .area_profile:before {display:none}
 	.navi_on .area_head .area_profile .tit_post {height:30px;padding:3px 0 0;text-align:left}
 	.navi_on .area_head .area_profile .link_post {padding-left:73px;font-size:14px;font-weight:normal;-webkit-line-clamp: 1;}
-	.navi_on .area_head .area_profile .txt_profile {display:inline-block;margin-top:5px;padding-left:73px;font-size:13px;color:#a7a7a7;font-family:applesdgothicneo-ultralight}
+	.navi_on .area_head .area_profile .txt_profile {display:inline-block;margin-top:5px;padding-left:73px;font-size:13px;color:#a7a7a7;font-family:'Spoqa Han Sans', sans-serif;}
 	.navi_on .area_head .area_profile .thumb_profile {position:absolute;left:20px;top:15px;width:43px;height:43px;margin:0}
 	.navi_on .area_search {display:none}
 	.navi_on .wrap_sub {position:absolute;left:0;top:0;z-index:100;width:100%;height:100%;display:block}
@@ -370,9 +370,9 @@ only screen and (max-width:738px){
 	.area_title {padding:0 15px 13px;margin-bottom:18px}
 	.area_title .tit_category a {font-weight:normal;font-size:14px}
 	.area_title .tit_post {padding:2px 0 3px;font-size:24px;line-height:30px}
-	.area_title .info_post {display:block;margin-top:5px;font-size:12px;font-family:applesdgothicneo-ultralight}
+	.area_title .info_post {display:block;margin-top:5px;font-size:12px;font-family:'Spoqa Han Sans', sans-serif;}
 	.area_title .info_post .txt_bar { margin:0 6px 0 4px}
-	.area_view { margin:0 15px;font-size:17px;line-height:24px;color:#333;font-family:applesdgothicneo-ultralight }
+	.area_view { margin:0 15px;font-size:17px;line-height:24px;color:#333;font-family:'Spoqa Han Sans', sans-serif;}
 
 	.area_view p { line-height:23px }
 
@@ -398,22 +398,22 @@ only screen and (max-width:738px){
 	.list_related .date_related {font-size:13px;bottom:14px}
 	.list_related .txt_related { color:#222 }
 	.list_related .txt_related,
-	.list_related .date_related { font-family:applesdgothicneo-ultralight }
+	.list_related .date_related { font-family:'Spoqa Han Sans', sans-serif;}
 	#tt-body-page .area_reply {margin-top:35px}
 	.area_related .link_more {right:15px;top:0}
 	.area_reply .tit_reply {padding:0 15px 8px;font-size:14px;margin:0}
 	.area_reply .list_reply li {padding:13px 15px 12px;min-height:30px}
 	.list_reply .thumb_profile{width:33px;height:33px;margin-right:11px;margin-top:2px;background-position:-120px -20px}
-	.area_reply .reply_content { font-family:applesdgothicneo-light; margin-top:4px }
+	.area_reply .reply_content { font-family:'Spoqa Han Sans', sans-serif; margin-top:4px }
 	.area_reply .tit_nickname {max-width:120px;margin-right:5px;font-size:14px}
 	.area_reply .txt_reply {line-height:19px;padding-top:2px}
-	.area_reply .txt_date  {font-family:applesdgothicneo-ultralight;margin-top:3px}
+	.area_reply .txt_date  {font-family:'Spoqa Han Sans', sans-serif;margin-top:3px}
 	.area_reply .more_reply {display:block;position:absolute;right:1px;top:0;width:30px;height:45px}
 	.area_reply .ico_more {display:block;width:3px;height:13px;margin:20px auto 0;background-position:-60px 0}
 	.area_reply .list_reply li:first-child .ico_more { margin-top:7px }
 	.area_reply .list_reply .re_reply {padding-left:60px}
 	.area_reply .list_reply li:last-child { padding-bottom:10px }
-	.area_reply .fld_reply {padding:15px 15px 14px;border-bottom:1px solid #efefef;font-family:applesdgothicneo-ultralight}
+	.area_reply .fld_reply {padding:15px 15px 14px;border-bottom:1px solid #efefef;font-family:'Spoqa Han Sans', sans-serif;}
 	#tt-body-page .area_reply .fld_reply { margin-top:2px }
 	.area_reply .writer_info .info_name {width:50%;margin-right:0}
 	.area_reply .writer_info .info_pw {width:50%}
@@ -427,7 +427,7 @@ only screen and (max-width:738px){
 	.area_reply .writer_check .lab_secret {font-size:14px;color:#666}
 	.area_reply .writer_check .ico_check {top:0;width:30px;height:30px;background-position:0 -60px}
 	.area_reply .writer_check .inp_secret:checked + .lab_secret .ico_check{background-position:-30px -60px}
-	.area_reply .writer_check .inp_secret:checked + .lab_secret {font-family:applesdgothicneo}
+	.area_reply .writer_check .inp_secret:checked + .lab_secret {font-family:'Spoqa Han Sans', sans-serif;}
 	.area_reply .writer_check {right:inherit;left:15px;bottom:15px}
 	.area_reply .writer_check .check_secret {float:left;height:30px;line-height:29px}
 	.area_reply .writer_check .inp_secret {width:30px;height:30px;margin:0 4px 0 0}
@@ -456,9 +456,9 @@ only screen and (max-width:738px){
 	.list_content .thumbnail_post { margin-top:1px; margin-left:14px }
 	.list_content .thumbnail_post,
 	.list_content .thumbnail_post img { width:80px; height:80px }
-	.list_content .tit_post {font-size:17px;line-height:21px;color:#222;font-family:applesdgothicneo-light;display: -webkit-box;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical}
-	.list_content .txt_post {font-size:14px;line-height:19px;font-family:applesdgothicneo-ultralight;-webkit-line-clamp:2;}
-	.list_content .detail_info {color:#a7a7a7; font-family:applesdgothicneo-ultralight; margin-top:4px}
+	.list_content .tit_post {font-size:17px;line-height:21px;color:#222;font-family:'Spoqa Han Sans', sans-serif;display: -webkit-box;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical}
+	.list_content .txt_post {font-size:14px;line-height:19px;font-family:'Spoqa Han Sans', sans-serif;-webkit-line-clamp:2;}
+	.list_content .detail_info {color:#a7a7a7; font-family:'Spoqa Han Sans', sans-serif;margin-top:4px}
 	.list_content .detail_info .txt_bar { margin:0 2px }
 	.list_content .detail_info .txt_date { font-size:13px }
 
@@ -483,7 +483,7 @@ only screen and (max-width:738px){
 	.list_title .tit_skin,
 	#tt-body-tag .article_skin .tit_skin,
 	#tt-body-guestbook .article_skin .tit_skin {position:fixed;left:0;right:0;top:0;height:45px;padding-bottom:0; border-bottom:1px solid #e0e0e0;background-color:rgba(255, 255, 255, 0.95);z-index:1}
-	.tit_skin .txt_title { display:block; position:absolute; left:50px; right:50px; top:0; height:45px; font-size:15px;line-height:48px; text-align:center; color:#222;font-family:applesdgothicneo-light; overflow:hidden; text-overflow:ellipsis; white-space: nowrap;word-wrap: normal}
+	.tit_skin .txt_title { display:block; position:absolute; left:50px; right:50px; top:0; height:45px; font-size:15px;line-height:48px; text-align:center; color:#222;font-family:'Spoqa Han Sans', sans-serif;overflow:hidden; text-overflow:ellipsis; white-space: nowrap;word-wrap: normal}
 
 	.area_foot { height:40px; line-height:38px; }
 }
