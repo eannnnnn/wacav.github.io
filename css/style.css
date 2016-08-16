@@ -372,7 +372,7 @@ only screen and (max-width:738px){
 	.area_title .tit_post {padding:2px 0 3px;font-size:24px;line-height:30px}
 	.area_title .info_post {display:block;margin-top:5px;font-size:12px;font-family:'Spoqa Han Sans', sans-serif;}
 	.area_title .info_post .txt_bar { margin:0 6px 0 4px}
-	.area_view { margin:0 15px;font-size:17px;line-height:24px;color:#333;font-family:'Spoqa Han Sans', sans-serif;}
+	.area_view { margin:0 15px;font-size:17px;line-height:24px;color:#5c5c5c;font-family:'Spoqa Han Sans', sans-serif;}
 
 	.area_view p { line-height:23px }
 
