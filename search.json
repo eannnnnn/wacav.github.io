@@ -13,8 +13,7 @@
 	    "day"   : "{{ post.date | date: "%d" }}",
 	    "month" : "{{ post.date | date: "%m" }}",
 	    "year"  : "{{ post.date | date: "%Y" }}"
-	  },
-	  "content" : "{{ post.content | strip_html | truncatewords: 50 }}"
+	  }
   },
   {% endfor %}null
 ]

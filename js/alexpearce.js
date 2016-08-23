@@ -46,7 +46,7 @@ var filterPostsByPropertyValue = function(posts, property, value) {
 			prop = post[property];
 		// Last element of tags is null
 		post.tags.pop();
-		
+
 		// The property could be a string, such as a post's category,
 		// or an array, such as a post's tags
 		if(property === 'search'){
@@ -75,7 +75,7 @@ var filterPostsByPropertyValue = function(posts, property, value) {
 			}
 		}
 	}
-	
+
 	return filteredPosts;
 };
 
@@ -89,21 +89,22 @@ var layoutResultsPage = function(property, value, posts) {
 	// Make sure we're on the search results page
 	var $container = $('#mArticle');
 	if ($container.length == 0) return;
-	
+
 	// Update the header
 	var str = majusculeFirst(property) + "		" + majusculeFirst(value);
 	$container.find('.txt_title').text(str);
-	
+
 	// Loop through each post to format it
 	for (var i in posts) {
 	var post = posts[i];
 	var imgHtml = '' ;
 	if(post.image != null && post.image != ''){
 		imgHtml = '<img src="/images/'+post.image+'>';
+		imgHtml = '<a href="'+post.href+'" class="thumbnail_post">'+imgHtml+'</a>'
 	}
 	$container.find('ul.results').append(
 		'<div class="list_content">'
-		+'<a href="'+post.href+'" class="thumbnail_post">'+imgHtml+'</a>'
+		+ imgHtml
 		+'<a href="'+post.href+'" class="link_post">'
 			+'<strong class="tit_post ">'+post.title+'</strong>'
 			+'<p class="txt_post">'+post.content+'</p>'
@@ -127,9 +128,9 @@ var noResultsPage = function(property, value) {
 	// Make sure we're on the search results page
 	var $container = $('#results');
 	if ($container.length == 0) return;
-	
+
 	$container.find('h1').text('No Results Found.').after('<p class="nadda"></p>');
-	
+
 	var txt = "We couldn't find anything associated with '" + value + "' here.";
 	$container.find('p.nadda').text(txt);
 };
@@ -138,17 +139,17 @@ var noResultsPage = function(property, value) {
 // Accepts:
 //	 elements: jQuery elements in which to replace tags
 // Returns: nothing
-var replaceERBTags = function(elements) {	
+var replaceERBTags = function(elements) {
 	elements.each(function() {
 	// Only for text blocks at the moment as we'll strip highlighting otherwise
 	var $this = $(this),
 		txt	 = $this.html();
-	
+
 	// Replace <%=	%>with {{ }}
 	txt = txt.replace(new RegExp("&lt;%=(.+?)%&gt;", "g"), "{{$1}}");
 	// Replace <% %> with {% %}
 	txt = txt.replace(new RegExp("&lt;%(.+?)%&gt;", "g"), "{%$1%}");
-	
+
 	$this.html(txt);
 	});
 };
@@ -171,7 +172,7 @@ $(function() {
 			});
 		}
 	});
-	
+
 	// Replace ERB-style Liquid tags in highlighted code blocks...
 	replaceERBTags($('div.highlight').find('code.text'));
 	// ... and in inline code
