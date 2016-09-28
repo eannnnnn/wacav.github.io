@@ -15,7 +15,7 @@ categories : notice
 *   **GitHub** : [KOR-waCa](https://github.com/kor-waca)
 *   **Community** : [9XD](https://www.facebook.com/groups/1565641083693087/), [OKKY](http://okky.kr) , [이상한모임](https://blog.weirdx.io/about)
 *   **Hobby**
-    *   [**Coding**](https://github.com/kor-waca/mean) MEAN Stack 공부
+    *   [**Coding**](https://github.com/ParkChong/study-javascript/tree/master/mean) MEAN Stack 공부
     *   **Game**
         *   Overwatch `waCa#3485`
         *   League of Legend `카왘이`
@@ -45,7 +45,7 @@ categories : notice
 
 *   **삼성SDS 모범병사 S/W 개발자 양성 과정** 수료 (2015.05.24 ~ 2015.08.14)
     *   웹개발 과정을 공부 했음
-*   [**MEAN**](https://github.com/kor-waca/mean)
+*   [**MEAN**](https://github.com/ParkChong/study-javascript/tree/master/mean)
     *   **Mongo** : v3.2.6 사용 중
     *   **Express** : v4.13.4 사용 중
     *   **Angular** : v1.5.3 사용 중
@@ -53,10 +53,9 @@ categories : notice
     *   Node 공부 중에 우연히 알게 되어 공부중 (Node 는 16년 4월부터)
     *   MEAN 공부는 (2016.06.30 부터)
 *   **NODE**
-    *   [**node**](https://github.com/kor-waca/node) : 처음 node 책을보며 express 와 같이 사용하며 개발
-    *   [**hobbycoding**](https://github.com/kor-waca/hobbyCoding) : 여러 모듈 사용(passport 등) 하여 개발 [**heroku**](https://waca.herokuapp.com) 통하여 배포 (나중에 추가 개발예정)
+    *   [**node**](https://github.com/ParkChong/study-javascript/tree/master/node)
 *   **JAVA 8**
     *   모던한 자바공부
 *   [**codewars**](http://www.codewars.com/)
     *   Javascript 로 문제 푸는 중
-*   [**waca.zz.am**](https://github.com/kor-waca/kor-waca.github.io) : Jekyll 이용 블로그 오픈
+*   [**waca.zz.am**](https://github.com/ParkChong/ParkChong.github.io) : Jekyll 이용 블로그 오픈
