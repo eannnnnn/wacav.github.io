@@ -3,7 +3,7 @@ gems: [jekyll-paginate, jekyll-paginate-category, jemoji, jekyll-feed]
 #Site settings
 title: "waCa"
 description: "블로그"
-email: "waca5436@gmail.com"
+email: "waca.chong.dev@gmail.com"
 
 #blog setting
 future: true
@@ -25,7 +25,7 @@ twitter: "waca08_18"
 twitter_url: "https://twitter.com/waca08_18"
 facebook: "tk5436"
 facebook_url: "https://facebook.com/tk5436"
-github: "ParkChong"
-github_url: "https://github.com/ParkChong"
+github: "wacav"
+github_url: "https://github.com/wacav"
 
 #RSS
