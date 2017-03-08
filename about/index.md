@@ -11,7 +11,7 @@ categories : notice
 *   **NickName** : waca
 *   **Mail** : tk5436@naver.com
 *   **Facebook** : [tk5436](https://facebook.com/tk5436)
-*   **GitHub** : [KOR-waCa](https://github.com/ParkChong)
+*   **GitHub** : [waCa](https://github.com/wacav)
 *   **Community** : [9XD](https://www.facebook.com/groups/1565641083693087/), [OKKY](http://okky.kr) , [이상한모임](https://blog.weirdx.io/about)
 *   **Hobby**
     *   **Game**
