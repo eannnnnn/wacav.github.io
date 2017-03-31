@@ -7,7 +7,7 @@ categories : notice
 ## Profile
 
 *   **Name** : 박총명
-*   **Age** : 1993.08.18 (24살)
+*   **Age** : 1993.08.18 (25살)
 *   **NickName** : waca
 *   **Mail** : tk5436@naver.com
 *   **Facebook** : [tk5436](https://facebook.com/tk5436)
