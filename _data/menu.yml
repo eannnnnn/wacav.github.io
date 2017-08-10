@@ -1,0 +1,11 @@
+#Menu
+menus:
+
+- title: "About"
+  url: "/about/"
+
+- title: "Dev"
+  url: "/blog/dev/"
+
+- title: "Other"
+  url: "/blog/other/"

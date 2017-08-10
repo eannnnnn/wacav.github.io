@@ -1,5 +1,10 @@
 # Build Settings
-gems: [jekyll-paginate, jekyll-paginate-category, jemoji, jekyll-feed]
+gems:
+  - jekyll-paginate
+  - jekyll-paginate-category
+  - jemoji
+  - jekyll-feed
+
 #Site settings
 title: "waCa"
 description: "블로그"
@@ -8,7 +13,9 @@ email: "waca.chong.dev@gmail.com"
 #blog setting
 future: true
 blogTitle: "이것저것"
-url: "http://waca.zz.am/"
+url: "https://blog.wacav.com/"
+
+
 #disqus Shorname
 disqus: korwacagithubio
 
@@ -27,5 +34,9 @@ facebook: "tk5436"
 facebook_url: "https://facebook.com/tk5436"
 github: "wacav"
 github_url: "https://github.com/wacav"
+resume: "waCa"
+resume_url: "https://www.cakeresume.com/waca"
+
+
 
 #RSS

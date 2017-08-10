@@ -1,7 +1,8 @@
 ---
 layout: post
-title : "About Me"
-categories : notice
+title : About
+categories : About
+url : /about/
 ---
 
 ## Profile

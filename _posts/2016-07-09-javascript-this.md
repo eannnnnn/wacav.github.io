@@ -2,7 +2,7 @@
 layout : post
 title : "javascript this 키워드"
 date : 2016-07-09 00:00:00
-categories : javascript
+categories : dev
 tags: js,javascript,this
 ---
 

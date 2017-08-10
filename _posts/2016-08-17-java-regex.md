@@ -2,7 +2,7 @@
 layout: post
 title: "JAVA 정규식 사용 특수문자 치환,제거"
 date: 2016-08-17 00:00:00
-categories: java
+categories: dev
 tags: java regex matches replace replaceAll
 ---
 

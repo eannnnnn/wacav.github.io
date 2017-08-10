@@ -2,7 +2,7 @@
 layout: post
 title: "Front-end 개발자 인터뷰문제 HTML/CSS부분"
 date: 2016-08-11 00:00:00
-categories: html
+categories: dev
 tags: html interview frontend
 ---
 

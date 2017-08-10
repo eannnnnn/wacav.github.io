@@ -2,7 +2,7 @@
 layout: post
 title: "Layout"
 date: 2016-08-30 00:00:00
-categories: html
+categories: dev
 tags: HTML css layout style
 ---
 

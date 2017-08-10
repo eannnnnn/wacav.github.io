@@ -2,7 +2,7 @@
 layout: post
 title: "자바스크립트 함수 몰랐던 것."
 date: 2016-07-09 00:00:00
-categories: javascript
+categories: dev
 tags: js,javascript
 ---
 

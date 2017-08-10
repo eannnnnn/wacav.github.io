@@ -2,7 +2,7 @@
 layout: post
 title: "Front-end 개발자 인터뷰문제 JS부분"
 date: 2016-08-11 00:00:00
-categories: javascript
+categories: dev
 tags: javascript js interview frontend
 ---
 ### JS에 관련된 질문들 :

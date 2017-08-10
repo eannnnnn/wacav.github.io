@@ -7,18 +7,9 @@
             <li>
               <a class="link_tit" href="/">전체 글</a>
               <ul class="category_list">
-                <li><a class="link_item" href="/about/">waCa</a></li>
-                <li><a class="link_item" href="/blog/os">OS  </a></li>
-                <li><a class="link_item" href="/blog/html">HTML/CSS</a></li>
-                <li><a class="link_item" href="/blog/javascript">Javascript  </a></li>
-                <li><a class="link_item" href="/blog/node">Node.js  </a></li>
-                <li><a class="link_item" href="/blog/angular">Angular.js  </a></li>
-                <li><a class="link_item" href="/blog/react">React.js  </a></li>
-                <li><a class="link_item" href="/blog/mongo">MongoDB  </a></li>
-                <li><a class="link_item" href="/blog/oracle">OracleDB  </a></li>
-                <li><a class="link_item" href="/blog/java">JAVA  </a></li>
-                <li><a class="link_item" href="/blog/tool">Tool  </a></li>
-                <li><a class="link_item" href="/blog/hobby">Hobby </a></li>
+                {% for nav in site.data.menu.menus %}
+                  <li><a class="link_item" href="{{ nav.url }}">{{ nav.title }}</a></li>
+                {% endfor %}
               </ul>
             </li>
           </ul>
@@ -49,6 +40,7 @@
             <ul class="list_board">
               <li><a href="{{ site.facebook_url }}" class="link_board" target="_blank">Facebook</a></li>
               <li><a href="{{ site.github_url }}" class="link_board" target="_blank">Github</a></li>
+              <li><a href="{{ site.resume_url }}" class="link_board" target="_blank">Resume</a></li>
             </ul>
           </div>
         </div>
