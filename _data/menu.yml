@@ -2,7 +2,7 @@
 menus:
 
 - title: "About"
-  url: "/about/"
+  url: "/about"
 
 - title: "Dev"
   url: "/blog/dev"
