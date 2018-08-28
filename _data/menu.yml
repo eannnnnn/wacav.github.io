@@ -5,7 +5,7 @@ menus:
   url: "/about/"
 
 - title: "Dev"
-  url: "/blog/dev/"
+  url: "/blog/dev"
 
 - title: "Other"
-  url: "/blog/other/"
+  url: "/blog/other"
